@@ -10,10 +10,10 @@ for file_name in list_of_files:
     print(extension)
     if extension == "":
         continue
-    if extension in [".gif",".png",".jpeg",".jpg",".jfif"]:
+    if extension in [".txt",".doc",".docx",".pdf"]:
         path1 = from_dir + "/" + file_name 
-        path2 = to_dir + "/" + "Image_Files" 
-        path3 = to_dir + "/" + "Image_Files" + "/" + file_name 
+        path2 = to_dir + "/" + "Document_Files" 
+        path3 = to_dir + "/" + "Document_Files" + "/" + file_name 
         #print("path1",path1)
         #print("path3",path3)
         if os.path.exists(path2):
